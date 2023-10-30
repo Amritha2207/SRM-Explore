@@ -1,0 +1,43 @@
+body {
+    background-color: #123C69; /* Set your desired background color here */
+}
+.card {
+    border: 2px solid #808080;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: calc(33.33% - 20px); /* Set the width to one-third of the container width, minus margin */
+    height: 420px; /* Increase the height for slightly larger cards */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block; /* Display cards inline */
+    box-sizing: border-box; /* Include padding and border in the total width */
+    vertical-align: top; /* Align the cards at the top of the container */
+    background-color: #ffffff; /* Set the default background color for the cards */
+    transition: transform 0.2s ease, background-color 0.2s ease; /* Add a smooth hover effect for scaling and background color */
+}
+
+.card img {
+    max-width: 100%;
+    max-height: 100%; /* Ensure the image fits within the card */
+    transition: transform 0.2s ease; /* Add a smooth hover effect for images */
+    border: 2px solid #808080;
+}
+
+.card button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Add hover effects for the cards and images */
+.card:hover {
+    transform: scale(1.05); /* Enlarge the card on hover */
+    background-color: #FFF1DC; /* Change the background color on hover */
+}
+
+.card img:hover {
+    transform: scale(1.1); /* Enlarge the image on hover */
+}
